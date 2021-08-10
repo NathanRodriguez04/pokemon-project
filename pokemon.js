@@ -1,7 +1,7 @@
 //make sure to put all your code in functions
 
 function onClick() {
-    $("#catch-button").click(function (e) {
+    $("#catch-button").click(function () {
         fetch("https://pokeapi.co/api/v2/pokemon", {
             method: 'GET',
             headers: {
