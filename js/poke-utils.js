@@ -1,28 +1,14 @@
-//make sure to put all your code in functions
-
-function onClick() {
-    $("#catch-button").click(function () {
-        fetch("https://pokeapi.co/api/v2/pokemon", {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            redirect: 'follow',
-        }).then(function (response) {
-            return response.json();
-        }).then(function (data) {
-            console.log(data);
-            randomizePokemon(data)
-        });
+//* API GET request to retrieve pokemon based on random number *
+function getPokemon(id) {
+    fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`, {
+        method: "GET"
     })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            addPokemon(data);
+        })
+        .catch(err => {
+            console.log("Uh oh, error: ", err);
+        })
 }
-
-function randomizePokemon(pokemon){
-    console.log(pokemon.results)
-    // get data that was passed in from on Click function
-
-//    randomize one pokemon from array (pokemon.results)
-}
-
-onClick();
-
