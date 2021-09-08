@@ -25,3 +25,4 @@ function randomizePokemon(pokemon){
 }
 
 onClick();
+
