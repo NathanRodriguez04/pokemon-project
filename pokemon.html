@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--       LINKS IN HEADS-->
         <meta charset="UTF-8">
-        <title>pokemon</title>
-        <script
-                src="https://code.jquery.com/jquery-3.6.0.js"
-                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-                crossorigin="anonymous"></script>
+        <title>Pokemon Project</title>
+        <link rel="stylesheet" href="css/pokemain.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <!--        SCRIPTS IN BODY-->
-        <button id="catch-button">
-
-        </button>
-        <div id="poke-container">
-
+    <body id="top">
+        <!--        <div id="background">-->
+        <div id="container">
+            <h1>WHO'S THAT POKEMON?! <img src="img/pika.png" alt="" width="50" height="50"></h1><br>
+            <button id="catch-btn">I choose you!</button>
         </div>
-
-        <!--        link js file to html file-->
-        <script src="pokemon.js">
-
-        </script>
+        <div id="poke-container"></div>
+        <!--        </div>-->
+        <a href="#top">Back to top!</a>
     </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/poke-utils.js"></script>
+    <script src="js/app.js"></script>
 </html>
